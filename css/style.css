@@ -9,20 +9,17 @@
 .main_titulo {
     display: inline-block;
     position: absolute;
-    bottom: 20%;
-    left: 10%;
+    bottom: 20%; left: 10%;
 }
 
 .main_titulo h1{
     font-weight: 800;
     font-size: 4.5em;
-
 }
 
 .arrow_main {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 100%; height: auto;
     padding-bottom: 5%;
     justify-content: center;
 }
@@ -62,8 +59,7 @@
 
 .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     opacity: 0;

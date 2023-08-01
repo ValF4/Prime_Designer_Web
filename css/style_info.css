@@ -10,8 +10,7 @@ p {
 .section_principal {
     display: block;
     position: relative;
-    padding: 0;
-    margin: 0;
+    padding: 0; margin: 0;
 }
 
 .section_principal img {
@@ -22,8 +21,7 @@ p {
 
 .sub_section_principal {
     transform: translate(0, -50%);
-    top: 50%;
-    left: 10%;
+    top: 50%; left: 10%;
     position: absolute;
 }
 
@@ -38,8 +36,7 @@ p {
 
 .arrow_main {
     position: absolute;
-    left: 50%;
-    bottom: 5%;
+    left: 50%; bottom: 5%;
 }
 
 .arrow_main img {
