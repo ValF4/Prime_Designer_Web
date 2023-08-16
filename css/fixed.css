@@ -1,24 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
+
+:root {
+    --main-size-logo: 8vw;
+    --main-transition-config: 300ms linear; 
+    --main-font-weigh: 300;
+    --bold-font-weigh: 600;
+    --ultrabold-font-weigh: 800;
+    --paleta-roxo-color: #9a48e7;
+    --main-color-font: #ffffff;
+    --black-color-font: #000;
+    --main-bg-color: #000;
+    --white-bg-color:#ffffff;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: var(--main-font-weigh);
     margin: 0; padding: 0;
     text-decoration: none;
     list-style: none;
-    color: rgb(255, 255, 255);
+    color: var(--main-color-font);
 }
 
 body {
-    background-color: black;
+    background-color: var(--main-bg-color);
 }
 
 nav {
-    background-color: black;
+    background-color: var(--main-bg-color);
 }
-
+    
 footer {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white-bg-color);
 }
 
 .navegation {
@@ -30,29 +44,30 @@ footer {
 
 .logo_nav {
     display: inline-block;
-    width: 20%;
     text-align: center;
+    width: 20vw;
 }
 
 .logo_nav img {
-    width: 8vw;
+    width: var(--main-size-logo);
     padding: 20px;
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
 }
 
 .logo_nav img:hover {
     transform: scale(1.1);
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
 }
 
 .nav_interacao {
     display: inline-block;
-    width: 500px;
+    min-width: 20vw;
+    padding-right: 4%;
 }
 
 .nav_interacao ul{
     display: flex;
-    font-weight: 600;
+    font-weight: var(--bold-font-weigh);
     gap: 18px;
     justify-content: left;
     align-items: center;
@@ -61,25 +76,25 @@ footer {
 
 .nav_interacao ul li {
     padding: 10px;
-    font-weight: 600;
-    transition: 300ms linear;
+    font-weight: var(--bold-font-weigh);
+    transition: var(--main-transition-config);
 }
 
 .nav_interacao ul li:hover {
-    transition: 300ms linear;
-    color: #9a48e7;
+    transition: var(--main-transition-config);
+    color: var(--paleta-roxo-color);
     border-bottom-style: solid;
     border-radius: 5px;
-    border-color: rgb(255, 255, 255);
+    border-color: var(--white-bg-color);
     border-width: 4px;
 }
 
 .icons_nav {
-    transition: 200ms linear;
+    transition: var(--main-transition-config);
 }
 
 .icons_nav:hover {
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
     filter: brightness(80%);
     transform: scale(1.1);
 }
@@ -98,13 +113,13 @@ footer {
 }
 
 .logo_footer img {
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
     width: 100px;
 }
 
 .logo_footer img:hover {
     scale: 1.1;
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
 }
 
 .direitos {
@@ -115,6 +130,6 @@ footer {
 }
 
 .direitos p {
-    color: black;
+    color: var(--black-color-font);
     text-align: center;
 }
