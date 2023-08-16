@@ -1,9 +1,9 @@
 .main_apresetacao {
     display: flex;
     position: relative;
-    margin-top: 10%;
-    width: auto;
+    min-width: 100%;
     height: 30vw;
+    margin-top: 10%;
 }
 
 .main_titulo {
@@ -13,8 +13,8 @@
 }
 
 .main_titulo h1{
-    font-weight: 800;
-    font-size: 4.5em;
+    font-weight: var(--ultrabold-font-weigh);
+    font-size: 4em;
 }
 
 .arrow_main {
@@ -25,13 +25,13 @@
 }
 
 .arrow_main img {
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
     width: 50px;
 }
 
 .arrow_main img:hover {
-    transition: 300ms linear;
-    transform: translateX(0) translateY(10px);
+    transition: var(--main-transition-config);
+    transform: translateX(0) translateY(10%);
 }
 
 .section_apresentacoes_main {
@@ -67,9 +67,9 @@
 }
 
 .overlay p {
-    color: rgb(253, 253, 253);
+    color: var(--main-color-font);
     font-size: 3em;
-    font-weight: 600;
+    font-weight: var(--bold-font-weigh);
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
@@ -79,13 +79,13 @@
 
 .overlay a:hover p {
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    background: linear-gradient(to right, #a35be7, #8014e6);
+    background: linear-gradient(to right, #000000, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
 
 .section_img:hover img {
-    transition: 300ms linear;
+    transition: var(--main-transition-config);
     filter: brightness(70%);
 }
