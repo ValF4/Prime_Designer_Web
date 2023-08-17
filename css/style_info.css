@@ -1,10 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
-}
-
-p {
-    text-indent: 1.5em;
-    margin-top: 0
+    background-color: var(--white-bg-color);
 }
 
 .section_principal {
@@ -19,59 +14,70 @@ p {
     height: auto;
 }
 
-.sub_section_principal {
-    transform: translate(0, -50%);
-    top: 50%; left: 10%;
-    position: absolute;
-}
-
 .sub_section_principal p {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%; left: 50%;
+    
     font-size: 5em;
-    font-weight: 800;
-}
-
-.sub_section_principal p span {
     font-weight: 800;
 }
 
 .arrow_main {
     position: absolute;
-    left: 50%; bottom: 5%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 4%;
 }
 
-.arrow_main img {
-    transition: 300ms linear;
-    width: 50px;
+.arrow_main img{
+    width: 34px;
 }
 
-.arrow_main img:hover {
-    transition: 300ms linear;
-    transform: translateX(0) translateY(10px);
+#h4_texto {
+    color: var(--black-color-font);
+    font-weight: var(--medium-font-weigh);
+    font-size: 2em;
+}
+
+h4#h4_texto::after {
+    content: '';
+    width: 200px;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: black;
 }
 
 .section_infos {
-    display: flex;
-    margin: 50px 0 50px 0;
     justify-content: center;
+    display: flex;
     width: 100%;
+    justify-content: center ;
+    margin: 50px 0 50px 0;
 }
 
 .sub_section_infos_text {
     display: flex;
     width: 60%;
     justify-content: center;
+    text-align: justify;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .sub_section_infos_text_p {
-    color: black;
+    color: var(--black-color-font);
     margin: auto;
     padding: 20px 0 20px 0;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: var(--medium-font-weigh);
     font-size: 1.1em;
 }
+
 
 .h2_empresas {
     display: flex;
@@ -108,13 +114,13 @@ p {
 
 .bussines-content {
     white-space: nowrap;
-    animation: marqueeTicker 60s linear 8s infinite;
+    animation: marqueeTicker linear 55s infinite;
     display: inline-block;
 }
 
 .bussines-content img {
     width: 10vw;
-    padding-left: 8cm;
+    padding: 0 2.5cm 0 2.5cm;
 }
 
 @keyframes marqueeTicker {
