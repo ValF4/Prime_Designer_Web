@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/fixed.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style_contato.css">
+
     <link rel="shortcut icon" href="../img/icon/logo_footer.svg" type="image/x-icon">
     <title>Contato | Prime Designer Studio</title>
     <meta name="description" content="Somos criação, inovação, reinvenção e tecnologia! Entre em contato com a gente!!!">
@@ -18,10 +20,10 @@
         </div>
         <div class="nav_interacao">
             <ul>
-                <a href="../index.html"><li>Home</li></a>
-                <a href="./info.html"><li>A Prime</li></a>
+                <a href="../index.html" target="_top"><li>Home</li></a>
+                <a href="./info.html" target="_parent"><li>A Prime</li></a>
                 <a href="#portifolio"><li>Portfólio</li></a>
-                <a href="./contato.html"><li>Contato</li></a>
+                <a href="./contato.html" target="_parent"><li>Contato</li></a>
                 <a href="https://www.behance.net/somosprimedsgn" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../img/icon/logo_behance.svg" alt="logo_behance"></a>
                 <a href="https://www.instagram.com/somosprimedsgn/" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../img/icon/logo_instagram.svg" alt="logo_Instagram"></a>
             </ul>
@@ -50,18 +52,58 @@
         <section>
             <div class="section_entrada_contato">
                 <div class="contato">
-                    <div class="">
-                        <input type="email" name="coloque seu Email aq" id="email_contato">
-                    </div>
+                    <form id="form_contato" class="from_contato">
+                        <div class="form-control">
+                            <label for="firstname"> Primeironome</label>
+                            <input type="text" id="firstname" required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Menssagem de erro</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="lastname"> Sobrenome</label>
+                            <input type="text" id="lastname" required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Menssagem de erro</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email"> Email</label>
+                            <input type="email" id="email" required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Menssagem de erro</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="phone"> Telefone</label>
+                            <input type="phone" id="phone" required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Menssagem de erro</small>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="duvida">Duvida</label>
+                            <input type="text" id="duvida" required/>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Menssagem de erro</small>
+                        </div>
+
+                        <button id="submit" >Enviar</button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <section>
-            <div>
-                <p>Ou se preferir, fale conosco pelo Whatsapp, clicando no botão abaixo.</p>
+            <div class="conteiner_op_whatsapp">
+                <p>Ou se preferir, fale conosco pelo Whatsapp.</p>
                 <div>
-                    <a href="wa.me/+5575981758245" target="_blank"><button>Whatsapp</button></a>
+                    <a href="https://wa.me/+5575981758245" target="_blank"><button id="bottom_whats">Clique aqui</button></a>
                 </div>
             </div>
         </section>
@@ -85,5 +127,7 @@
             <p>Site desenvolvido por Prime Studio</p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/272071cc15.js" crossorigin="anonymous"></script>
 </body>
 </html>
