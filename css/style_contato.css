@@ -1,14 +1,5 @@
-* {
-    padding: 0; margin: 0;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-p {
-    text-indent: 1.5em;
-    margin-top: 0
+:root {
+    --text-sub-titulo: 'Venha trabalhar conosco';
 }
 
 .section_principal {
@@ -22,8 +13,8 @@ p {
 }
 
 .sub_section_principal {
-    transform: translate(0, -50%);
-    top: 50%; left: 10%;
+    transform: translate(-50%, -50%);
+    top: 50%; left: 50%;
     position: absolute;
 }
 
@@ -32,29 +23,40 @@ p {
     font-weight: 800;
 }
 
-.arrow_main img {
-    position: absolute;
-    top: 35%; left: 50%;
-    transition: 300ms linear;
-    width: 50px;
+.sub_section_principal p::after {
+    content: var(--text-sub-titulo);
+    font-size: 0.2em;
+    font-weight: 400;
+    text-align: center;
+    display: block;
 }
 
-.arrow_main img:hover {
-    transition: 300ms linear;
-    transform: translateX(0) translateY(10px);
+.arrow_main img {
+    position: absolute;
+    transition: var(--main-transition-config);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 5%;
+    width: 50px;
+    height: auto;
+}
+
+.arrow_main:hover img {
+    transition: var(--main-transition-config);
+    bottom: 2%;
 }
 
 .sub_titulo {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 50px 0 50px 0;
+    margin: 50px auto;
 }
 
 .sub_titulo > h2 {
     font-size: 2em;
-    font-weight: 600;
-    color: black;
+    font-weight: var(--bold-font-weigh);
+    color: var(--black-color-font);
 }
 
 .section_entrada_contato {
@@ -66,17 +68,77 @@ p {
 
 .contato {
     display: flex;
+    background-color: #c6c6c6;
+    min-width: 800px;
     justify-content: center;
     text-align: center;
-    width: 70%;
     border-radius: 10px;
     height: 80%;
-    background-color: rgb(235, 235, 235);
 }
 
-.contato > input{
-    color: black;
+.contato > input[type]{
+    color: var(--black-color-font);
     border-radius: 5px;
     height: 30px;
     width: 70%;
+}
+
+.from_contato > button {
+    display: inline-block;
+    transition: var(--main-transition-config);
+    background-color: var(--paleta-roxo-color);
+    border: rgb(0, 62, 0) solid 1px;
+    color: var(--white-color-font);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+}
+
+.form-control label, small {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+.conteiner_op_whatsapp {
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.conteiner_op_whatsapp > p {
+    font-size: 1.5em;
+    font-weight: var(--bold-font-weigh);
+    color: var(--black-color-font);
+}
+
+#bottom_whats {
+    display: inline-block;
+    transition: var(--main-transition-config);
+    background-color: green;
+    border: rgb(0, 62, 0) solid 1px;
+    color: var(--white-color-font);
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    width: 125px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#bottom_whats:hover, .from_contato button:hover{
+    transition: linear 200ms;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: black;
+    color: var(--white-color-font);
 }
