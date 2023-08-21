@@ -73,6 +73,11 @@
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.sub_text_portifolio p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
 .section_img:hover .overlay {
     opacity: 1;
   }

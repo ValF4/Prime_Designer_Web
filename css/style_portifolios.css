@@ -26,6 +26,7 @@
 
 .text_main > h1 {
     font-size: 2em;
+    text-align: center;
     font-weight: var(--bold-font-weigh);
 }
 
