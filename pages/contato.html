@@ -53,26 +53,26 @@
             <section>
                 <div class="section_entrada_contato">
                     <div class="contato">
-                        <form id="form_contato" class="from_contato">
-                            <div class="form-control">
-                                <label for="firstname"> Primeironome</label>
-                                <input type="text" id="firstname" required/>
+                        <form autocomplete="on" method="POST" id="form_contato" class="from_contato">
+                            <div class="form-control form_nome_sobrenome">
+                                <label for="firstname"> Nome</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Primeiro nome" required/>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <i class="fas fa-check-circle"></i>
                                 <small>Menssagem de erro</small>
                             </div>
 
-                            <div class="form-control">
+                            <div class="form-control form_nome_sobrenome">
                                 <label for="lastname"> Sobrenome</label>
-                                <input type="text" id="lastname" required/>
+                                <input type="text" id="lastname" name="lastname" placeholder="Sobrenome" required/>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <i class="fas fa-check-circle"></i>
                                 <small>Menssagem de erro</small>
                             </div>
 
-                            <div class="form-control">
-                                <label for="email"> Email</label>
-                                <input type="email" id="email" required/>
+                            <div class="form-control form_infos">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required/>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <i class="fas fa-check-circle"></i>
                                 <small>Menssagem de erro</small>
@@ -80,7 +80,7 @@
 
                             <div class="form-control">
                                 <label for="phone"> Telefone</label>
-                                <input type="phone" id="phone" required/>
+                                <input type="phone" id="phone" name="phone" placeholder="Telefone" autocomplete="tel" required/>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <i class="fas fa-check-circle"></i>
                                 <small>Menssagem de erro</small>
@@ -88,13 +88,13 @@
 
                             <div class="form-control">
                                 <label for="duvida">Duvida</label>
-                                <input type="text" id="duvida" required/>
+                                <input type="text" id="duvida" name="duvida" placeholder="Escreva seu texto aqui" required/>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <i class="fas fa-check-circle"></i>
                                 <small>Menssagem de erro</small>
                             </div>
 
-                            <button id="submit" >Enviar</button>
+                            <input type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
