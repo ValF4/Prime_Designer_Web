@@ -78,8 +78,14 @@
 
 .form-control {
     margin-bottom: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
+}
+
+.sub_name_name {
+    display: flex;
+    gap: 50px;
+    width: 100%;
 }
 
 .form-control input{
