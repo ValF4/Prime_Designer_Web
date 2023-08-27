@@ -12,7 +12,7 @@
     margin: auto;
     width: 100%;
     height: auto;
-    mask-image: url(/img/portifolio/Bupetz/12.png);
+    mask-image: none;
     -webkit-mask-image: linear-gradient(to top, rgb(0, 0, 0) 50% ,transparent 100%);
     transition: filter 0.3s ease-in-out;
 }
@@ -48,10 +48,10 @@
 
 .conteiner_description_project > h2 {
     font-size: 1.5em;
+    font-weight: bold;
     text-align: center;
     width: auto;
     color: var(--black-color-font);
-    font-weight: var(--medium-font-weigh);
 }
 
 .conteiner_description_project:after{
@@ -90,4 +90,40 @@
     margin: 0;
     padding: 0;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    .text_main > h1 {
+        font-size: 1.3em;
+    }
+
+    .conteiner_description_project > h2 {
+        font-size: 0.9em;
+    }
+
+    .conteiner_description_project:after{
+        width: 38%;
+    }
+
+    .text_desciption_portifolio {
+        width: 70%;
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+
+    .text_main > h1 {
+        font-size: 1.5em;
+    }
+
+    .conteiner_description_project > h2 {
+        font-size: 1em;;
+    }
+
+    .conteiner_description_project:after{
+        width: 40%;
+    }
+
+}
+
 

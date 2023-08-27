@@ -101,6 +101,10 @@
         font-size: 1.2em;
     }
 
+    .main_titulo {
+        bottom: 30%;
+    }
+
     .overlay p {
         font-size: 1em;
     }
@@ -114,7 +118,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .main_titulo h1 {
-        font-size: 2.2em;
+        font-size: 1.7em;
     }
 
     .overlay p {
