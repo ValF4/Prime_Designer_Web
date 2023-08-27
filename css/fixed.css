@@ -134,7 +134,26 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .logo_nav img {
+        width: 100px;
+    }
+
+    .nav_interacao {
+        display: none;
+    }
+
+    .logo_footer img {
+        width: 50px;
+    }
+
+    .direitos p {
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
     .logo_nav img {
         width: 80px;
     }
@@ -151,4 +170,18 @@ footer {
         font-size: 0.8em;
     }
     
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .logo_nav img {
+        width: 110px;
+    }
+
+    .logo_footer img {
+        width: 75px;
+    }
+
+    .direitos p {
+        font-size: 0.8em;
+    }
 }
