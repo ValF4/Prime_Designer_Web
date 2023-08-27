@@ -133,3 +133,10 @@ footer {
     color: var(--black-color-font);
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .logo_nav img {
+        width: 80px;
+    }
+    
+}

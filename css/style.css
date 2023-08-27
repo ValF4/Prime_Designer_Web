@@ -68,6 +68,7 @@
 
 .overlay p {
     color: var(--main-color-font);
+    text-align: center;
     font-size: 3em;
     font-weight: var(--bold-font-weigh);
     transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -93,4 +94,35 @@
 .section_img:hover img {
     transition: var(--main-transition-config);
     filter: brightness(70%);
+}
+
+@media only screen and (max-width: 600px) {
+    .main_titulo h1 {
+        font-size: 2em;
+    }
+
+    .overlay p {
+        font-size: 1.5em;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) {
+    .main_titulo h1 {
+        font-size: 2.2em;
+    }
+
+    .overlay p {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main_titulo h1 {
+        font-size: 2.5em;
+    }
+
+    .overlay p {
+        font-size: 2em;
+    }
 }
