@@ -104,20 +104,25 @@
     .overlay p {
         font-size: 1.5em;
     }
-    
+
+    .arrow_main img {
+        transition: var(--main-transition-config);
+        width: 20px;
+    }
+
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
     .main_titulo h1 {
-        font-size: 2.2em;
+        font-size: 1em;
     }
 
     .overlay p {
-        font-size: 2em;
+        font-size: 1em;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-width: 992px) {
     .main_titulo h1 {
         font-size: 2.5em;
     }
