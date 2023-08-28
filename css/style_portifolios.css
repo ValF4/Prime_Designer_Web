@@ -4,6 +4,7 @@
 
 .img_main {
     position: relative;
+    z-index: -1;
     background-color: var(--main-bg-color);
 }
 

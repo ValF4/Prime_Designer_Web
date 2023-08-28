@@ -61,7 +61,8 @@ footer {
 }
 
 .nav_interacao {
-    display: inline-block;
+    display: block;
+    z-index: 1;
     width: 550px;
     min-width: 20vw;
 }
@@ -171,6 +172,7 @@ body::-webkit-scrollbar-thumb {
 
     .nav_interacao {
         display: none;
+        z-index: 9;
         position: absolute;
         background-color: none;
         background-color: #212121;
@@ -203,21 +205,24 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 602px) and (max-width: 768px) {
 
     .logo_nav img {
-        width: 100px;
+        width: 150px;
     }
 
     #icon_navegation {
         display: block;
         position: absolute;
+        width: 40px;
         right: 0;
         top: 0;
     }
 
     .nav_interacao {
         display: none;
+        transition: var(--main-transition-config);
+        z-index: 9;
         position: absolute;
         background-color: none;
         background-color: #212121;
@@ -225,11 +230,15 @@ body::-webkit-scrollbar-thumb {
         left: 0;
         width: 100%;
     }
-
+    
     .nav_interacao ul{
         display: flex;
         justify-content: center;
-        padding: 14px 0;
+        padding: 10px 0;
+    }
+
+    .nav_interacao {
+        display: inline;
     }
 
     .logo_footer img {
@@ -242,24 +251,18 @@ body::-webkit-scrollbar-thumb {
     
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .material-symbols-outlined {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    
+    .logo_nav img {
+        width: 100px;
+    }
+
+    #icon_navegation {
         display: none;
     }
-    
+
     .nav_interacao {
-        width: 480px;
-    }
-
-    .logo_nav img {
-        width: 110px;
-    }
-
-    .logo_footer img {
-        width: 75px;
-    }
-
-    .direitos p {
-        font-size: 0.8em;
+        display: block;
+        width: 490px;
     }
 }
