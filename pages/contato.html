@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../img/icon/logo_footer.svg" type="image/x-icon">
     <title>Contato | Prime Designer Studio</title>
     <meta name="description" content="Somos criação, inovação, reinvenção e tecnologia! Entre em contato com a gente!!!">
-</head>
+</head onresize="new_windows()">
 
     <body>
 
@@ -20,15 +20,22 @@
         <div class="logo_nav">
             <img src="../img/icon/logo_nav.svg" alt="Logo da Prime Studio">
          </div>
+         <div class="hamburguer_menu">
+            <img  id="icon_navegation" src="../img/icon/Icon_menu.svg" alt="Icone Menu" onclick="click_menu()">
+        </div>
+
             <nav>
-                <div class="nav_interacao">
+                <div class="nav_interacao" id="options">
                     <ul>
                         <a href="../index.html" target="_parent"><li>Home</li></a>
                         <a href="../pages/info.html" target="_parent"><li>A Prime</li></a>
                         <a href="../index.html#portifolio"><li>Portfólio</li></a>
                         <a href="../pages/contato.html" target="_parent"><li>Contato</li></a>
+                        
+                    <div class="img_redes_sociais">
                         <a href="https://www.behance.net/somosprimedsgn" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../img/icon/logo_behance.svg" alt="logo_behance"></a>
                         <a href="https://www.instagram.com/somosprimedsgn/" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../img/icon/logo_instagram.svg" alt="logo_Instagram"></a>
+                    </div>
                     </ul>
                 </div>
             </nav>
@@ -133,5 +140,6 @@
 
         <script src="https://kit.fontawesome.com/272071cc15.js" crossorigin="anonymous"></script>
         <script src="../js/block_ifarmes.js"></script>
+        <script src="../js/menu.js"></script>
     </body>
 </html>
