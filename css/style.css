@@ -96,13 +96,13 @@
     filter: brightness(70%);
 }
 
-@media only screen and (min-width: 200px) and (max-width: 600px){
+@media only screen and (min-width: 200px) and (max-width: 601px){
     .main_titulo h1 {
         font-size: 1.2em;
     }
 
     .main_titulo {
-        bottom: 30%;
+        bottom: 20%;
     }
 
     .overlay p {
@@ -119,6 +119,10 @@
 @media only screen and (min-width: 600px) and (max-width: 768px){
     .main_titulo h1 {
         font-size: 1.7em;
+    }
+
+    .main_titulo {
+        bottom: 10%;
     }
 
     .overlay p {
