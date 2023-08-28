@@ -14,20 +14,25 @@
     <meta name="description" content="Portfólio da Prime Studio. Serviço para a Bupetz PetShop">
 </head>
 
-    <body>
+    <body onresize="new_windows()">
         <header class="navegation">
             <div class="logo_nav">
                 <a href="../../index.html"> <img src="../../img/icon/logo_nav.svg" alt="Logo da Prime Studio"> </a>
             </div>
+            <div class="hamburguer_menu">
+                <img  id="icon_navegation" src="../../img/icon/Icon_menu.svg" alt="Icone Menu" onclick="click_menu()">
+            </div>
             <nav>
-                <div class="nav_interacao">
+                <div class="nav_interacao" id="options">
                     <ul>
                         <a href="../../index.html" target="_parent"><li>Home</li></a>
                         <a href="../../pages/info.html" target="_parent"><li>A Prime</li></a>
                         <a href="../../index.html#portifolio"><li>Portfólio</li></a>
                         <a href="../../pages/contato.html" target="_parent"><li>Contato</li></a>
-                        <a href="https://www.behance.net/somosprimedsgn" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../../img/icon/logo_behance.svg" alt="logo_behance"></a>
-                        <a href="https://www.instagram.com/somosprimedsgn/" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../../img/icon/logo_instagram.svg" alt="logo_Instagram"></a>
+                        <div id="img_redes_sociais">
+                            <a href="https://www.behance.net/somosprimedsgn" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../../img/icon/logo_behance.svg" alt="logo_behance"></a>
+                            <a href="https://www.instagram.com/somosprimedsgn/" target="_blank"><img style="width: 1.5em;" class="icons_nav" src="../../img/icon/logo_instagram.svg" alt="logo_Instagram"></a>
+                        </div>
                     </ul>
                 </div>
             </nav>
@@ -104,5 +109,6 @@
             </div>
         </footer>
         <script src="../../js/block_ifarmes.js"></script>
+        <script src="../../js/menu.js"></script>
     </body>
 </html>
